@@ -22,6 +22,7 @@ A Connect 4 game implemented with python and its pygame library.
 * numpy
 
 ## Sample Code
+```
 def connect_four(board, piece):
     for row in range(ROW - 1, -1, -1):
         for col in range(COL - 3):
@@ -42,3 +43,4 @@ def connect_four(board, piece):
         for col in range(3, COL):
             if(board[row][col] == piece and board[row - 1][col - 1] == piece and board[row - 2][col - 2] == piece and board[row - 3][col - 3] == piece):
                 return True
+```
